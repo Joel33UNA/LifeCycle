@@ -11,6 +11,7 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+        Toast.makeText(this, "onCreate() 2da Actividad", Toast.LENGTH_SHORT).show()
         findViewById<Button>(R.id.btnActivity2).setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
